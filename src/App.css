@@ -1,0 +1,21 @@
+.App {
+  overflow-x: clip;
+}
+
+.handh {
+  background: var(--black);
+}
+
+.App>nth-child {
+  background: var(--black);
+  position: relative;
+}
+
+.white-gradient {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: rgb(225, 225, 225, 0.522);
+  filter: blur(8rem);
+  border-radius: 100px;
+}

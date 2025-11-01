@@ -1,0 +1,22 @@
+.h-wrapper {
+color: white;
+    
+}
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--Secondary);
+}
+
+.h-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-menu >* :hover{
+    cursor: pointer;
+}
+
