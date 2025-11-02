@@ -1,0 +1,72 @@
+.r-head {
+    margin-bottom: 2rem;
+}
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    transform: all 3000ms ease-in;
+}
+
+.r-card>img {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.r-card > :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.r-card > :nth-child(3) {
+    font-size: 1.5rem;
+   
+}
+.r-card > :nth-child(4) {
+    font-size: 0.7rem ;
+    width: 15rem;
+   
+} 
+
+.r-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    background-color: rgba(136, 160, 255, 0.21)
+}
+
+.swiper-horizontal {
+    overflow: visible;
+}
+
+.r-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+  z-index: 10;
+}
+
+.r-buttons button {
+  background: var(--blue-gradient, linear-gradient(180deg, #4066ff, #2949c6));
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.r-buttons button:hover {
+  transform: scale(1.1);
+}
+

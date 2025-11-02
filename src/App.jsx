@@ -3,7 +3,8 @@ import Header from './Components/Header/Header.jsx';
 import './App.css'
 import Hero from './Components/Hero/Hero.jsx';
 import Companies from './Components/Companies/Companies.jsx';
-import Recidences from './Components/Recidences/Recidences.jsx';
+import Residencies from './Components/Residencies/Residencies.jsx';
+import Value from './Components/Value/Value.jsx';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
      <Hero />
      </div>
      <Companies />
-     <Recidences />
+     <Residencies />
+     <Value />
     </div>
   )
 }
