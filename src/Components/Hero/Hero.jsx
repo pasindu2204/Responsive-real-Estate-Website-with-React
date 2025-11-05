@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import { FaLocationDot } from "react-icons/fa6";
 import CountUp from "react-countup";
-
+import { motion } from 'framer-motion';
 
 
 
@@ -16,9 +16,16 @@ const Hero = () => {
         <div className='hero-left'>
             <div className='flexColStart hero-title'>
                 <div className='orange-circle'/>
-                <h1>
+                <motion.h1
+                 initial={{y: "2rem", opacity:0}}
+                 animate={{y:0, opacity:1}}
+                 transition={{
+                    duration: 2,
+                    type: "spring",
+                 }}
+                >
                     Discover<br /> Most Suitable<br /> Property <br />
-                </h1>
+                </motion.h1>
             </div>
             <div className='flexColStart hero-des'>
                  <span className='secondaryText'>
@@ -37,13 +44,14 @@ const Hero = () => {
 
             <div className='flexColStart hero-stats'>
                 <div className='flexCenter hero-stat'>
-                <span>
+                   <span>
                     <CountUp start={8850} end={9000} duration={4} />
                     <span>+</span> 
                     </span>
-                <span className='secondaryText'>Premium Products</span> 
+                   <span className='secondaryText'>Premium Products</span> 
                  
-</div>
+                </div>
+
 
 <div className='flexCenter hero-stat'>
                <span>
@@ -67,9 +75,16 @@ const Hero = () => {
 
 {/* Right Side */}
         <div className='flexCenter hero-right'>
-            <div className='image-container'>
+            <motion.div
+            initial={{x: "7rem", opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{
+                duration: 2,
+                type: "spring",
+             }}
+            className='image-container'>
                 <img src='./hero-image.png' alt='hero-image' />
-            </div>
+            </motion.div>
         </div>
         </div>
 </section>

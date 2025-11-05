@@ -2,11 +2,12 @@
     color: white;
     position: relative;
   padding-bottom: 2rem;
+  z-index: 1
 }
 
 .hero-Container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     gap: 2rem;
     
@@ -19,6 +20,7 @@ display: flex;
 flex-direction: column;
   gap: 2rem;
   flex: 1; 
+  z-index: 99;
 }
 
 .hero-title {
@@ -96,4 +98,30 @@ flex-direction: column;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    .hero-Container {
+        margin-top: 2rem;
+    }
+    .hero-title h1 {
+font-size: 2.5rem;
+line-height: 3rem;
+    }
+    
+    .hero-search-bar {
+        width: 100%;
+    }
+    .image-container {
+        width: 95%;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+    .hero-stat{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .hero-right {
+        width: 100%;
+    }
 }
