@@ -1,8 +1,8 @@
-import { CgSpaceBetween } from "react-icons/cg";
+import { CgSpaceBetween } from "react-icons/cg"; // this import is fine if you're using the icon elsewhere
 
 export const SliderSettings = {
     slidesPerView: 1,
-    SpaceBetween: 50,
+    spaceBetween: 50,   // ✅ fixed (was SpaceBetween)
     breakpoints: {
         400: {
             slidesPerView: 1,
@@ -14,10 +14,7 @@ export const SliderSettings = {
             slidesPerView: 3,
         },
         1100: {
-           slidesPerView: 4,
+            slidesPerView: 4,
         },
     }
-
-
-
-}
+};
